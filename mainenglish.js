@@ -85,14 +85,24 @@ const questions = [
   "2.52. What was the main task given us by OneHouse company?",
   "2.53. What form of maintenance of the apps OneHouse asked ? ",
   "2.54. What developers did when received approval?",
-  "2.55. What happened before we got the designs of the specific components ?"`,
+  "2.55. What happened before we got the designs of the specific components ?",
   "2.56. What happened when the architecture was ready in OneHouse project? ",
-  "2.57. What aside of the Transaction platform we also were focused?", 
+  "2.57. What aside of the Transaction platform we also were focused?",
   "2.58. What was the goals given to us by One Mount?",
   "2.59. What One Mount done with colaboration with callstack?",
   "2.60. What was the testimonials given by One Mount to Callstack?",
 
-    https://devszczepaniak.pl/web-developer-pytania-rekrutacyjne-cz-1/
+  "3.1 What is Redux and what we discover with newest version of React regarding state menagement?",
+  "3.2 What is state management in an application, and why (and when) we will need it?",
+  "3.3. What is state management stystem for React point of view?",
+  "3.4. On whtat basen on Flux?:",
+  "3.5. Name the advantages of Redux",
+  "3.6. Name the disadvantages of Redux",
+  "3.7. What is Context?",
+  "3.8. Name the advantages of Context API",
+  "3.9. Name the disadvantages of Context API",
+  "3.10. When to use Redux?",
+  "3.10. When to use Context-API?"`https://devszczepaniak.pl/web-developer-pytania-rekrutacyjne-cz-1/
     "http://net-informations.com/js/iq/unerror.htm
     https://www.toptal.com/javascript/interview-questions#form
     http://net-informations.com/js/default.htm
@@ -147,7 +157,7 @@ const answers = [
   "2.20.React Native is an Open Source library that lives under the Facebook organization on Github. It is a mirror of the code that is hosted internally at Facebook as a part of their mono-repository architecture. As a result, Facebook developers run React Native straight from the source. On top of that, React Native is published to the npm registry for those that want to consume it like any other JavaScript package.This process is done by the volunteers and tracked in real - time on Github, in its dedicated repository. ",
   "2.21. At Callstack, our focus is to help your business achieve its goals by empowering your React and React Native development teams. We hope that the insights given not only answer your questions, but actually inspire you to build a mobile app with React Native. If you have any questions or challenges around React or React Native, don’t hesitate to get in touch. We are eager to take a closer look at your existing architecture and help you move forward.",
 
-  "2.22. At callstack they value the idea of knowledge sharing. There are many ways of doing so, but one particular thet like most is by organizing hackathons. This term is associated with long development sessions for teams from all around the globe, where the end goal is a product that solves a problem defined at the beginning of the event.",
+  "2.22. At callstack they value the idea of knowledge sharing. There are many ways of doing so, but one particular that like most is by organizing hackathons. This term is associated with long development sessions for teams from all around the globe, where the end goal is a product that solves a problem defined at the beginning of the event.",
   "2.23. During a lockdown, the number of ways you can organize a hackathon is decreased to one – fully remote.This was the first time thet’ve done it this way, so thet wanted to make sure that every participant did not feel the difference. Our knowledge - sharing hackathon was a bit different than the “traditional” version described and instead of working on one problem, we decided to take a closer look at our Open Source Projects and fix some bugs, etc.",
 
   "2.24. The hackathon lasted around 3 hours and was organized internally with our developers as participants. The cool thing was that our new joiners took part in the event. It was a great opportunity for them to gain their first experience in contributing to Open Source.",
@@ -193,6 +203,18 @@ const answers = [
   "2.58. One of the goals given to us by One Mount was to be “part of the team”. This meant we were helping to review code, review pull requests and discuss with the teams what could be improved.",
   "2.59. With the collaboration with Callstack, One Mount built solid and stable MVPs of their products while meeting strict deadlines. In addition, we helped to level up One Mount developers on React Native, empowering them to continue the work into the future.",
   "2.60. Callstack was with us since day one of the development work, and they helped us not only propose, design and ultimately build out the MVPs of some of our major products — they took our team from “zero to hero” in React Native. At the end of the collaboration we had shipped MVPs on time and had grown an internal team of developers capable of maintaining and scaling these projects into the future. In short, we could not have done this without Callstack’s collaboration. It was an honor and a pleasure to work with Callstack, and we whole-heartily recommend Callstack to anyone looking for an elite and world-class team of experts in React Native.",
+
+  "3.1 Redux is an open-source JavaScript library for managing application state. Usually is used with libraries like React or Angular for building user interfaces. With the newest version of React launches the new Context API. It seems these both tools could have the same responsibility in the application. In the following I focus on the advantages and disadvantages of Redux and Context API 2020 and I finally recap and clarify when is the best situation to use these tools.",
+  "3.2 Application state management is crucial in medium and large projects. It is useful in smaller and more manageable projects, but sometimes we can handle it without special libraries or patterns. Usually,  we explain state management for front-end applications as a sort of logic that keeps and refreshes current data. More abstractly, it means to take care of complete business transactions - to maintain user interface inputs and possibly synchronize the data between pages, back-end, and front-end parts. ",
+  "3.3. For a  React point of view, proper state management keeps us from passing a lot of props from top-level elements to their destination grand-grandchildren.",
+  `3.4. Flux base on the four parts of the application: store , action, dispatcher and view. Store just menages the state, here we have values from the UI and business layer. In the application should be only one "source of truth". Action should be inside a plain object. Commonly this is type field for action name  and payload for additional data. The dispatcher broadcasts the called action. View means a UI element. At this point, the component should render elements and handle user actions. In case of changes, the view is re-render. `,
+  "3.5. Pros (+) \nCommon used  - a lot of problems are resolved by community\nRedux Toolkit - new impressive feature to limit boilerplate code\nDesigned for often changed (refreshed) data\nGood React Redux package to integrate with React\nBetter debug - there is a possibility to log state and actions\nCode organization - applications with Redux usually have similar architecture, so it is easier to understand the next one project for experienced developers\nServer-Side Rendering is available with Redux",
+  "3.6. Cons (-)\n• Not build-in in React (increases a final bundle size)\n• May be misleading for beginners (a lot of hidden logic)\n• More setup than Context API\n• Reuse components are harder because some data come from the global state, not from props",
+  "3.7.  It is a smart built-in feature to solve problems with sharing data between nested (not directly connected) components through Context API. ",
+  "3.8. Pros (+)\n• The build-in React tool has not influenced the final bundle size\n• Easier to understand and handle for beginners comparing to Redux data flow\n• Excellent for more static data - not so frequency updated like in Redux\n• Only little setup is required\n• Well documented part of React\n• A lot of local contexts to handle separate logic tasks can be in the application.",
+  "3.9. Cons (-)\n• Context-API is not designed for often refreshed or changed data \n• There could be more difficult maintenance in more complex frontend applications, especially if we have custom solutions and helperszn\n• Reuse components are harder, because some data come from context, not always from props",
+  "3.10. Management of complex applications state seems to be an excellent task for Redux. It is a powerful tool to take care of all aspects of this part. Our app with this library applied could support server-side rendering, which sometimes is an essential feature.\n From the viewpoint of architecture, Redux helps us to keep project folders and files in order and make our app readable for further development. This tool suggests split code into logical parts, as reducer or actions. It allows developers to understand an application structure and has an influence on reducing time for onboarding new team members (if these developers have a basic knowledge about Redux).\n Additionally, Redux has excellent support for high-frequency data updates.  ",
+  "3.11. Context was prepared for considering global, shareable data - like theme values or user authentication in the app.\n Context is a good way to share values between our components without using props every time, but these criteria should not be only one. If some values are needed on different levels of the components tree and for many elements, it will be a good idea to use context for this data. All components below the Context Provider are able to read this data, handle them, or rewrite. ",
 ];
 const generateQuestion = () => {
   const questionIndex = Math.floor(Math.random() * questions.length);

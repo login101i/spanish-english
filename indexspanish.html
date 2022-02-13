@@ -17,21 +17,22 @@
             background: rgb(255, 255, 255);
             background-repeat: no-repeat;
             background-size: cover;
-            /* position: relative; */
+            position: relative;
 
         }
 
         .app {
             display: flex;
             flex-direction: column;
+    
             justify-content: center;
-            align-items: center;
+            align-items: centser;
             margin-top: 22px;
             height: 100vh;
         }
 
         .terminal {
-            width: 80vw;
+            width: 100vw;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -81,11 +82,19 @@
             display: block;
             margin: 20px auto 20px;
             background-color: #fff;
-            border: 5px solid cadetblue;
+            border: 5px solid rgb(29, 162, 202);
+            border-radius: 10px;
             padding: 20px 50px;
             font-size: 22px;
             cursor:pointer;
             z-index: 22;
+            transition: 0.4s;
+        }
+        button:hover{
+            background-color: rgba(145, 240, 248, 0.274);
+                        border: 5px solid rgb(23, 150, 189);
+                      
+
         }
 
         .addOpacity {
@@ -95,6 +104,7 @@
         div.question {
             margin: 10px 40px;
             font-size: 24px;
+            font-size:22px;
             text-transform: uppercase;
             text-align: center;
             padding-bottom: 28px;
@@ -130,15 +140,15 @@
             border: 0.5px solid grey;
         }
 
-        .point.red {
+        /* .point.red {
             background: red;
             pointer-events: none;
 
-        }
+        } */
 
-        .point.green {
+        /* .point.green {
             background: green;
-        }
+        } */
 
         .showAllAnswers {
             background: rgb(255, 255, 255);
@@ -218,13 +228,13 @@
     <section class="app">
         <section class="terminal">
             <div class="left"></div>
-            <div class="center">
+            <di class="center">
                 <button class="pregunta">Pregunta</button>
                 <button class="respuesta">Respuesta</button>
                 <button class="buttonShowAll">Show all</button>
                 <div class="question"></div>
                 <div class="answer"></div>
-            </div>
+            </di
             <div class="right"></div>
         </section>
 
